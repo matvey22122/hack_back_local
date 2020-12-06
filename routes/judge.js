@@ -52,4 +52,12 @@ router.post('/createMember', async (req, res) => {
     res.status(200).send()
 })
 
+router.post('/createRating', async (req, res) => {
+    const data = req.body
+
+    await createRating(data)
+
+    res.status(200).send()
+})
+
 export default router

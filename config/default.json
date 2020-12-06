@@ -1,5 +1,5 @@
 {
   "PORT": 7000,
-  "mongoUri": "mongodb://localhost:27017/backLocal",
+  "mongoUri": "mongodb+srv://dbUser:12345678a@cluster0.mvg33.mongodb.net/backLocal?retryWrites=true&w=majority",
   "baseUrl": "http://localhost:7000"
 }

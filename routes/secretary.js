@@ -7,6 +7,11 @@ const router = express.Router()
 
 let index = 0;
 
+router.get('/download', (req, res) => {
+    const file = `${__dirname}/go.html`
+    res.download(file)
+})
+
 router.get('/members', async (req, res) => {
     try {
         const data = await allMembers()
